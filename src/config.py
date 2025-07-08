@@ -167,5 +167,3 @@ YTDL_OPTIONS: dict = cfg["ytdl"]["options"]
 """Flags and values for YTDL connection process."""
 YTDL_AMBIGUOUS_ATTEMPTS: int = cfg["ytdl"]["ambiguous_attempts"]
 YTDL_AMBIGUOUS_RESULTS: int = cfg["ytdl"]["ambiguous_results"]
-
-YTDL_OPTIONS["outtmpl"] = os.path.join(TEMP_DIR, YTDL_OPTIONS["outtmpl"])
