@@ -1,8 +1,7 @@
 services:
-    jukebox:
-        image: jukebox:latest
-        container_name: jukebox
-        restart: unless-stopped
-        volumes:
-            - ./src:/jukebox
-            - ./private:/private
+  jukebox:
+    image: jukebox:latest
+    container_name: jukebox
+    restart: unless-stopped
+    volumes:
+      - ./private:/private

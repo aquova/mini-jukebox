@@ -28,15 +28,18 @@ import yt_dlp
 
 # Runtime
 
+CURRENT_DIR = os.path.dirname(__file__)
+ASSETS_PATH = os.path.join(CURRENT_DIR, "assets")
+
 TEMP_DIR: str = "/private/temp"
 """Relative path to temporary folder used to store cached media data."""
 LOG_DIR: str = "/private/logs"
 """Relative path to temporary folder used to store session logs."""
 CONFIG_PATH: str = "/private/config.json"
 """Relative path to data file used for bot configuration."""
-STRINGS_PATH = "/jukebox/assets/strings.json"
+STRINGS_PATH = os.path.join(ASSETS_PATH, "strings.json")
 """Relative path to data file used for logging, formatting, reply, and flavour strings."""
-PINS_PATH = "/jukebox/assets/pins.json"
+PINS_PATH = os.path.join(ASSETS_PATH, "pins.json")
 """Relative path to data file used for pinned message contents in text channel."""
 DATABASE_PATH: str = "/private/jukebox.db"
 """Relative path to database file used to store usage history."""
